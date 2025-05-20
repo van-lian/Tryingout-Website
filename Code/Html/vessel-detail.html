@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipDecKK - Vessel Detail</title>
+    <link rel="stylesheet" href="/LAB-Web/Code/CSS/styles.css"/>
+    <style>
+    </style>
+    <!-- Removed Font Awesome Link -->
+</head>
+<body>
+    <header>
+        <div class="navbar__container">
+            <!-- Hamburger menu moved to left -->
+            <button
+                class="navbar__toggle"
+                id="mobile-menu"
+                aria-label="Toggle Navigation"
+                aria-expanded="false"
+            >
+                <img src="/LAB-Web/Picture/Icon/bars.svg" alt="Menu" class="icon">
+            </button>
+            <!-- Logo centered -->
+            <a href="/LAB-Web/Code/HTML/index.html" id="navbar__logo">ShipDecKK</a>
+            <!-- User icon moved to right -->
+            <div class="navbar__right">
+                <a href="/LAB-Web/Code/HTML/signup.html" class="user-icon">
+                    <img src="/LAB-Web/Picture/Icon/user.svg" alt="User" class="icon">
+                </a>
+            </div>
+            <!-- Full screen menu that appears when hamburger is clicked -->
+            <div class="menu-container" id="menu-container">
+                <!-- Navigation links -->
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/about-us.html" class="navbar__links">About Us <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/services.html" class="navbar__links">Services <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/vessels.html" class="navbar__links">Vessels <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                </ul>
+                <!-- Contact section at bottom of hamburger menu -->
+                <div class="contact-section">
+                    <h3 class="contact-heading">Our Contacts:</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/instagram.svg" alt="Instagram" class="icon">
+                            <a href="https://instagram.com/shipdeck" class="contact-link">ShipDeckk</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/facebook.svg" alt="Facebook" class="icon">
+                            <a href="https://facebook.com/shipdeck" class="contact-link">ShipDeckk</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/phone.svg" alt="Phone" class="icon">
+                            <a href="tel:+12345678900" class="contact-link">+1 (234) 567-8900</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Vessel Detail Main Content -->
+    <main class="vessel-detail">
+        <div class="vessel-detail__header">
+            <div class="vessel-detail__image-container">
+                <img src="/LAB-Web/Picture/boatpic/60' Sea Ray 1.png" alt="60' Sea Ray" class="vessel-detail__image" id="vessel-main-image">
+            </div>
+            <div class="vessel-detail__info">
+                <h1 class="vessel-detail__title" id="vessel-title">60' Sea Ray</h1>
+                <p class="vessel-detail__price" id="vessel-price">$1.5 Million</p>
+                <div class="vessel-detail__description" id="vessel-description">
+                    <p>This pristine 60' Sea Ray Sundancer offers the perfect blend of luxury and performance. Built with meticulous attention to detail, this vessel features plush accommodations, state-of-the-art electronics, and powerful engines for a smooth cruising experience.</p>
+                    <p>The elegant interior design showcases premium materials throughout, with spacious cabins, a fully equipped galley, and a sophisticated entertainment system. The expansive deck area provides ample space for relaxation and entertaining guests.</p>
+                </div>
+                <div class="vessel-detail__cta">
+                    <a href="#inquiry-form" class="vessel-detail__button">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specifications Section -->
+        <section class="vessel-detail__specs">
+            <h2 class="vessel-detail__specs-title">Specifications</h2>
+            <div class="vessel-detail__specs-grid">
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Length</p>
+                    <p class="vessel-detail__spec-value">60 ft</p>
+                </div>
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Beam</p>
+                    <p class="vessel-detail__spec-value">15.2 ft</p>
+                </div>
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Year</p>
+                    <p class="vessel-detail__spec-value">2023</p>
+                </div>
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Fuel Capacity</p>
+                    <p class="vessel-detail__spec-value">800 gallons</p>
+                </div>
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Water Capacity</p>
+                    <p class="vessel-detail__spec-value">150 gallons</p>
+                </div>
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Max Speed</p>
+                    <p class="vessel-detail__spec-value">35 knots</p>
+                </div>
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Staterooms</p>
+                    <p class="vessel-detail__spec-value">3</p>
+                </div>
+                <div class="vessel-detail__spec-item">
+                    <p class="vessel-detail__spec-label">Bathrooms</p>
+                    <p class="vessel-detail__spec-value">2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Vessels Section -->
+        <section class="related-vessels">
+            <h2 class="related-vessels__title">You May Also Like</h2>
+            <div class="related-vessels__grid">
+                <div class="related-vessel__card">
+                    <img src="/LAB-Web/Picture/boatpic/78' Monte Carlo (MDR) 1.png" alt="78' Monte Carlo" class="related-vessel__img">
+                    <div class="related-vessel__info">
+                        <h3 class="related-vessel__title">78' Monte Carlo (MDR)</h3>
+                        <p class="related-vessel__price">$2 Million</p>
+                        <a href="vessel-detail.html?id=monte-carlo" class="related-vessel__link">View Details <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </div>
+                </div>
+                <div class="related-vessel__card">
+                    <img src="/api/placeholder/400/320" alt="Sunseeker Yacht" class="related-vessel__img">
+                    <div class="related-vessel__info">
+                        <h3 class="related-vessel__title">Sunseeker 86'</h3>
+                        <p class="related-vessel__price">$2.8 Million</p>
+                        <a href="vessel-detail.html?id=sunseeker" class="related-vessel__link">View Details <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </div>
+                </div>
+                <div class="related-vessel__card">
+                    <img src="/api/placeholder/400/320" alt="Azimut Yacht" class="related-vessel__img">
+                    <div class="related-vessel__info">
+                        <h3 class="related-vessel__title">Azimut 72'</h3>
+                        <p class="related-vessel__price">$2.2 Million</p>
+                        <a href="vessel-detail.html?id=azimut" class="related-vessel__link">View Details <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="/" class="footer__logo-link">
+                        <h2>ShipDecKK</h2>
+                        <p>Excellence in Every Voyage</p>
+                    </a>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="/LAB-Web/Code/HTML/index.html">Home</a></li>
+                            <li><a href="/LAB-Web/Code/HTML/services.html">Services</a></li>
+                            <li><a href="/LAB-Web/Code/HTML/about-us.html">About Us</a></li>
+                            <li><a href="/LAB-Web/Code/HTML/vessels.html">Vessels</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="/yacht-sales.html">Yacht Sales</a></li>
+                            <li><a href="/cruises.html">Luxury Cruises</a></li>
+                            <li><a href="/cargo.html">Cargo Transport</a></li>
+                            <li><a href="/charter.html">Private Charter</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3>Contact Us</h3>
+                        <ul class="footer__contact">
+                            <li>
+                                <img src="/LAB-Web/Picture/Icon/location-dot.svg" alt="Location" class="icon">
+                                <span>123 Harbor Drive, Marina Bay</span>
+                            </li>
+                            <li>
+                                <img src="/LAB-Web/Picture/Icon/phone.svg" alt="Phone" class="icon">
+                                <a href="tel:+12345678900">+1 (234) 567-8900</a>
+                            </li>
+                            <li>
+                                <img src="/LAB-Web/Picture/Icon/envelope.svg" alt="Email" class="icon">
+                                <a href="mailto:info@shipdeck.com">info@shipdeck.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__social">
+                <a href="https://facebook.com/shipdeck" aria-label="Facebook">
+                    <img src="/LAB-Web/Picture/Icon/facebook.svg" alt="Facebook" class="icon">
+                </a>
+                <a href="https://instagram.com/shipdeck" aria-label="Instagram">
+                    <img src="/LAB-Web/Picture/Icon/instagram.svg" alt="Instagram" class="icon">
+                </a>
+                <a href="https://youtube.com/shipdeck" aria-label="YouTube">
+                    <img src="/LAB-Web/Picture/Icon/youtube.svg" alt="YouTube" class="icon">
+                </a>
+                <a href="https://twitter.com/shipdeck" aria-label="Twitter">
+                    <img src="/LAB-Web/Picture/Icon/twitter.svg" alt="Twitter" class="icon">
+                </a>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2020 ShipDecKK. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="/terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/LAB-Web/Code/JS/vessels-detail.js"></script>
+</body>
+</html>

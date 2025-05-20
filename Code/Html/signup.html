@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Subscribe - ShipDecKK</title>
+    <link rel="stylesheet" href="/LAB-Web/Code/CSS/styles.css"/>
+    <!-- Removed Font Awesome script -->
+</head>
+<body>
+    <header>    
+        <div class="navbar__container">
+            <!-- Hamburger menu moved to left -->
+            <button
+                class="navbar__toggle"
+                id="mobile-menu"
+                aria-label="Toggle Navigation"
+                aria-expanded="false"
+            >
+                <img src="/LAB-Web/Picture/Icon/bars.svg" alt="Menu" class="icon">
+            </button>
+            <!-- Logo centered -->
+            <a href="/LAB-Web/Code/HTML/index.html" id="navbar__logo">ShipDecKK</a>
+            <!-- User icon moved to right -->
+            <div class="navbar__right">
+                <a href="/LAB-Web/Code/HTML/signup.html" class="user-icon">
+                    <img src="/LAB-Web/Picture/Icon/user.svg" alt="User" class="icon">
+                </a>
+            </div>
+            <!-- Full screen menu that appears when hamburger is clicked -->
+            <div class="menu-container" id="menu-container">
+                <!-- Navigation links -->
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/about-us.html" class="navbar__links">About Us <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/services.html" class="navbar__links">Services <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/vessels.html" class="navbar__links">Vessels <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                </ul>
+                <!-- Contact section at bottom of hamburger menu -->
+                <div class="contact-section">
+                    <h3 class="contact-heading">Our Contacts:</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/instagram.svg" alt="Instagram" class="icon">
+                            <a href="https://instagram.com/shipdeck" class="contact-link">ShipDeckk</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/facebook.svg" alt="Facebook" class="icon">
+                            <a href="https://facebook.com/shipdeck" class="contact-link">ShipDeckk</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/phone.svg" alt="Phone" class="icon">
+                            <a href="tel:+12345678900" class="contact-link">+1 (234) 567-8900</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="subscribe-container">
+        <h1>Subscribe to ShipDecKK</h1>
+        <form id="subscribeForm">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" />
+                <div class="form-error" id="error-name"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" />
+                <div class="form-error" id="error-email"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" />
+                <div class="form-error" id="error-password"></div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age *</label>
+                <input type="number" id="age" min="1" />
+                <div class="form-error" id="error-age"></div>
+            </div>
+            <div class="form-group">
+                <label for="plan">Subscription Plan *</label>
+                <select id="plan">
+                    <option value="">-- Select Plan --</option>
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium</option>
+                    <option value="vip">VIP</option>
+                </select>
+                <div class="form-error" id="error-plan"></div>
+            </div>
+            <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+    </div>
+    <script src="/LAB-Web/Code/JS/signup.js"></script>
+</body>
+</html>

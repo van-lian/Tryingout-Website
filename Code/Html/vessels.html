@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipDecKK - Our Vessels</title>
+    <link rel="stylesheet" href="/LAB-Web/Code/CSS/styles.css"/>
+    <!-- Removed Font Awesome Link -->
+</head>
+<body>
+    <header>
+        <div class="navbar__container">
+            <!-- Hamburger menu moved to left -->
+            <button
+                class="navbar__toggle"
+                id="mobile-menu"
+                aria-label="Toggle Navigation"
+                aria-expanded="false"
+            >
+                <img src="/LAB-Web/Picture/Icon/bars.svg" alt="Menu" class="icon">
+            </button>
+            <!-- Logo centered -->
+            <a href="/LAB-Web/Code/HTML/index.html" id="navbar__logo">ShipDecKK</a>
+            <!-- User icon moved to right -->
+            <div class="navbar__right">
+                <a href="/LAB-Web/Code/HTML/signup.html" class="user-icon">
+                    <img src="/LAB-Web/Picture/Icon/user.svg" alt="User" class="icon">
+                </a>
+            </div>
+            <!-- Full screen menu that appears when hamburger is clicked -->
+            <div class="menu-container" id="menu-container">
+                <!-- Navigation links -->
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/about-us.html" class="navbar__links">About Us <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/LAB-Web/Code/HTML/services.html" class="navbar__links">Services <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                    </li>
+                </ul>
+                <!-- Contact section at bottom of hamburger menu -->
+                <div class="contact-section">
+                    <h3 class="contact-heading">Our Contacts:</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/instagram.svg" alt="Instagram" class="icon">
+                            <a href="https://instagram.com/shipdeck" class="contact-link">ShipDeckk</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/facebook.svg" alt="Facebook" class="icon">
+                            <a href="https://facebook.com/shipdeck" class="contact-link">ShipDeckk</a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="/LAB-Web/Picture/Icon/phone.svg" alt="Phone" class="icon">
+                            <a href="tel:+12345678900" class="contact-link">+1 (234) 567-8900</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Banner Section -->
+    <section class="page-banner">
+        <div class="banner-image">
+            <img src="/LAB-Web/Picture/Hero-images/vessel.jpeg" alt="Vessels Banner">
+            <div class="banner-overlay"></div>
+        </div>
+        <div class="banner-content">
+            <h1>Our Vessels</h1>
+            <p>Discover our premium selection of maritime vessels</p>
+        </div>
+    </section>
+
+    <!-- Vessels Categories Section -->
+    <section class="vessel-categories">
+        <div class="categories-container">
+            <h2 class="section-title">Browse By Category</h2>
+            <div class="categories-wrapper">
+                <button class="category-btn active" data-filter="all">All Vessels</button>
+                <button class="category-btn" data-filter="yacht">Luxury Yachts</button>
+                <button class="category-btn" data-filter="cruise">Cruise Ships</button>
+                <button class="category-btn" data-filter="cargo">Cargo Vessels</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vessels Showcase Section -->
+    <section class="vessels">
+        <div class="vessels__container">
+            <div class="vessels__wrapper">
+                <!-- Vessel 1 -->
+                <div class="vessel__card" data-category="yacht">
+                    <a href="vessel-detail.html?id=sea-ray" class="vessel__link">
+                        <div class="vessel__img-container">
+                            <img src="/LAB-Web/Picture/boatpic/60' Sea Ray 1.png" alt="60' Sea Ray" class="vessel__img">
+                            <div class="vessel__overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="vessel__info">
+                            <h3 class="vessel__title">60' Sea Ray</h3>
+                            <p class="vessel__price">$1.5 Million</p>
+                            <p class="vessel__description">Luxury yacht with state-of-the-art amenities</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Vessel 2 -->
+                <div class="vessel__card" data-category="yacht">
+                    <a href="vessel-detail.html?id=monte-carlo" class="vessel__link">
+                        <div class="vessel__img-container">
+                            <img src="/LAB-Web/Picture/boatpic/78' Monte Carlo (MDR) 1.png" alt="78' Monte Carlo" class="vessel__img">
+                            <div class="vessel__overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="vessel__info">
+                            <h3 class="vessel__title">78' Monte Carlo (MDR)</h3>
+                            <p class="vessel__price">$2 Million</p>
+                            <p class="vessel__description">Elegant yacht with spacious interiors and advanced features</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Vessel 3 -->
+                <div class="vessel__card" data-category="cruise">
+                    <a href="vessel-detail.html?id=carnival" class="vessel__link">
+                        <div class="vessel__img-container">
+                            <img src="/LAB-Web/Picture/boatpic/Carnival 2.png" alt="Carnival Cruise" class="vessel__img">
+                            <div class="vessel__overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="vessel__info">
+                            <h3 class="vessel__title">Carnival Cruise Line</h3>
+                            <p class="vessel__price">$8.9K/Pax</p>
+                            <p class="vessel__description">Experience luxury cruising with world-class entertainment</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Vessel 4 -->
+                <div class="vessel__card" data-category="cargo">
+                    <a href="vessel-detail.html?id=hamburg" class="vessel__link">
+                        <div class="vessel__img-container">
+                            <img src="/LAB-Web/Picture/boatpic/hamburg 2.png" alt="Hamburg Cargo" class="vessel__img">
+                            <div class="vessel__overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="vessel__info">
+                            <h3 class="vessel__title">Hamburg</h3>
+                            <p class="vessel__price">$669/Cargo</p>
+                            <p class="vessel__description">Reliable cargo vessel with efficient transport solutions</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Additional Vessels -->
+                <div class="vessel__card" data-category="yacht">
+                    <a href="vessel-detail.html?id=sunseeker" class="vessel__link">
+                        <div class="vessel__img-container">
+                            <img src="/api/placeholder/400/320" alt="Sunseeker Yacht" class="vessel__img">
+                            <div class="vessel__overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="vessel__info">
+                            <h3 class="vessel__title">Sunseeker 86'</h3>
+                            <p class="vessel__price">$2.8 Million</p>
+                            <p class="vessel__description">Exquisite luxury yacht with sleek design and ultimate comfort</p>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                <div class="vessel__card" data-category="yacht">
+                    <a href="vessel-detail.html?id=azimut" class="vessel__link">
+                        <div class="vessel__img-container">
+                            <img src="/api/placeholder/400/320" alt="Azimut Yacht" class="vessel__img">
+                            <div class="vessel__overlay">
+                                <span>View Details</span>
+                            </div>
+                        </div>
+                        <div class="vessel__info">
+                            <h3 class="vessel__title">Azimut 72'</h3>
+                            <p class="vessel__price">$2.2 Million</p>
+                            <p class="vessel__description">Italian craftsmanship with premium materials and finish</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="vessels-cta">
+        <div class="cta-container">
+            <h2>Find Your Perfect Vessel</h2>
+            <p>Our marine experts are ready to help you select the ideal vessel for your needs.</p>
+            <a href="/LAB-Web/Code/HTML/contact.html" class="cta-button">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="/" class="footer__logo-link">
+                        <h2>ShipDecKK</h2>
+                        <p>Excellence in Every Voyage</p>
+                    </a>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="/LAB-Web/Code/HTML/index.html">Home</a></li>
+                            <li><a href="/LAB-Web/Code/HTML/services.html">Services</a></li>
+                            <li><a href="/LAB-Web/Code/HTML/about-us.html">About Us</a></li>
+                            <li><a href="/LAB-Web/Code/HTML/vessels.html">Vessels</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="/yacht-sales.html">Yacht Sales</a></li>
+                            <li><a href="/cruises.html">Luxury Cruises</a></li>
+                            <li><a href="/cargo.html">Cargo Transport</a></li>
+                            <li><a href="/charter.html">Private Charter</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <h3>Contact Us</h3>
+                        <ul class="footer__contact">
+                            <li>
+                                <img src="/LAB-Web/Picture/Icon/location-dot.svg" alt="Location" class="icon">
+                                <span>123 Harbor Drive, Marina Bay</span>
+                            </li>
+                            <li>
+                                <img src="/LAB-Web/Picture/Icon/phone.svg" alt="Phone" class="icon">
+                                <a href="tel:+12345678900">+1 (234) 567-8900</a>
+                            </li>
+                            <li>
+                                <img src="/LAB-Web/Picture/Icon/envelope.svg" alt="Email" class="icon">
+                                <a href="mailto:info@shipdeck.com">info@shipdeck.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__social">
+                <a href="https://facebook.com/shipdeck" aria-label="Facebook">
+                    <img src="/LAB-Web/Picture/Icon/facebook.svg" alt="Facebook" class="icon">
+                </a>
+                <a href="https://instagram.com/shipdeck" aria-label="Instagram">
+                    <img src="/LAB-Web/Picture/Icon/instagram.svg" alt="Instagram" class="icon">
+                </a>
+                <a href="https://youtube.com/shipdeck" aria-label="YouTube">
+                    <img src="/LAB-Web/Picture/Icon/youtube.svg" alt="YouTube" class="icon">
+                </a>
+                <a href="https://twitter.com/shipdeck" aria-label="Twitter">
+                    <img src="/LAB-Web/Picture/Icon/twitter.svg" alt="Twitter" class="icon">
+                </a>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2020 ShipDecKK. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="/terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/LAB-Web/Code/JS/main.js"></script>
+</body>
+</html>
