@@ -10,10 +10,10 @@ mobileMenu.addEventListener('click', function() {
     // Toggle between hamburger and X icon
     const icon = mobileMenu.querySelector('img');
     if (icon.src.includes('bars.svg')) {
-        icon.src = '/LAB-Web/Picture/Icon/xmark.svg';
+        icon.src = '../../Picture/Icon/xmark.svg';
         icon.alt = 'Close';
     } else {
-        icon.src = '/LAB-Web/Picture/Icon/bars.svg';
+        icon.src = '../../Picture/Icon/bars.svg';
         icon.alt = 'Menu';
     }
 });
@@ -35,7 +35,7 @@ function loadVesselData() {
             name: '60\' Sea Ray',
             price: '$1.5 Million',
             description: '<p>This pristine 60\' Sea Ray Sundancer offers the perfect blend of luxury and performance. Built with meticulous attention to detail, this vessel features plush accommodations, state-of-the-art electronics, and powerful engines for a smooth cruising experience.</p><p>The elegant interior design showcases premium materials throughout, with spacious cabins, a fully equipped galley, and a sophisticated entertainment system. The expansive deck area provides ample space for relaxation and entertaining guests.</p>',
-            image: '/LAB-Web/Picture/boatpic/60\' Sea Ray 1.png',
+            image: '../../Picture/boatpic/60\' Sea Ray 1.png',
             specs: {
                 'Length': '60 ft',
                 'Beam': '15.2 ft',
@@ -47,7 +47,7 @@ function loadVesselData() {
                 'Bathrooms': '2'
             },
             gallery: [
-                '/LAB-Web/Picture/60\' Sea Ray 1.png',
+                '../../Picture/60\' Sea Ray 1.png',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
@@ -60,7 +60,7 @@ function loadVesselData() {
             name: '78\' Monte Carlo (MDR)',
             price: '$2 Million',
             description: '<p>The magnificent 78\' Monte Carlo is the epitome of elegance and sophistication on water. This exceptional vessel combines Italian craftsmanship with cutting-edge technology to deliver an unparalleled yachting experience.</p><p>Featuring multiple spacious staterooms, a luxurious salon, and a fly bridge with panoramic views, this yacht is designed for those who demand the very best. Advanced propulsion systems ensure remarkably quiet and fuel-efficient cruising.</p>',
-            image: '/LAB-Web/Picture/boatpic/78\' Monte Carlo (MDR) 1.png',
+            image: '../../Picture/boatpic/78\' Monte Carlo (MDR) 1.png',
             specs: {
                 'Length': '78 ft',
                 'Beam': '18.5 ft',
@@ -72,7 +72,7 @@ function loadVesselData() {
                 'Bathrooms': '3'
             },
             gallery: [
-                '/LAB-Web/Picture/78\' Monte Carlo (MDR) 1.png',
+                '../../Picture/78\' Monte Carlo (MDR) 1.png',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
@@ -85,7 +85,7 @@ function loadVesselData() {
             name: 'Carnival Cruise Line',
             price: '$8.9K/Pax',
             description: '<p>Experience the ultimate cruise vacation aboard our Carnival cruise ships. These floating resorts offer world-class amenities, entertainment, and dining options for travelers of all ages.</p><p>From stunning oceanview cabins to luxurious suites, onboard water parks to Broadway-style shows, our Carnival cruise ships are designed to provide an unforgettable journey across the world\'s most beautiful destinations.</p>',
-            image: '/LAB-Web/Picture/boatpic/Carnival 2.png',
+            image: '../../Picture/boatpic/Carnival 2.png',
             specs: {
                 'Length': '952 ft',
                 'Beam': '116 ft',
@@ -97,7 +97,7 @@ function loadVesselData() {
                 'Restaurants': '12'
             },
             gallery: [
-                '/LAB-Web/Picture/Carnival 2.png',
+                '../../Picture/Carnival 2.png',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
@@ -110,7 +110,7 @@ function loadVesselData() {
             name: 'Hamburg',
             price: '$669/Cargo',
             description: '<p>The Hamburg represents the pinnacle of modern cargo vessel design, offering unmatched efficiency and reliability for commercial shipping operations. This vessel features state-of-the-art cargo handling systems and advanced navigation technology.</p><p>With impressive cargo capacity and fuel-efficient engines, the Hamburg provides cost-effective transport solutions for businesses of all sizes. Our experienced crew ensures safe and timely delivery of your valuable goods to destinations worldwide.</p>',
-            image: '/LAB-Web/Picture/boatpic/hamburg 2.png',
+            image: '../../Picture/boatpic/hamburg 2.png',
             specs: {
                 'Length': '400 ft',
                 'Beam': '58 ft',
@@ -122,7 +122,7 @@ function loadVesselData() {
                 'Range': '8,500 nautical miles'
             },
             gallery: [
-                '/LAB-Web/Picture/hamburg 2.png',
+                '../../Picture/hamburg 2.png',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
                 '/api/placeholder/400/320',
@@ -315,7 +315,7 @@ function updateRelatedVessels(currentVesselId, allVessels) {
             <div class="related-vessel__info">
                 <h3 class="related-vessel__title">${vessel.name}</h3>
                 <p class="related-vessel__price ${vessel.status !== 'available' ? `vessel-${vessel.status}` : ''}">${priceDisplay}</p>
-                <a href="vessel-detail.html?id=${id}" class="related-vessel__link">View Details <img src="/LAB-Web/Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
+                <a href="vessel-detail.html?id=${id}" class="related-vessel__link">View Details <img src="../../Picture/Icon/chevron-right.svg" alt="Right arrow" class="icon"></a>
             </div>
         `;
         

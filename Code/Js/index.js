@@ -10,10 +10,10 @@ mobileMenu.addEventListener('click', function() {
     // Toggle between hamburger and X icon
     const icon = mobileMenu.querySelector('img');
     if (icon.src.includes('bars.svg')) {
-        icon.src = '/LAB-Web/Picture/Icon/xmark.svg';
+        icon.src = '../../Picture/Icon/xmark.svg';
         icon.alt = 'Close';
     } else {
-        icon.src = '/LAB-Web/Picture/Icon/bars.svg';
+        icon.src = '../../Picture/Icon/bars.svg';
         icon.alt = 'Menu';
     }
 });
