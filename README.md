@@ -1,7 +1,7 @@
 # TryingOut-Website
 
 
-As my first website project i'll be trying to make a website about Ships called ShipDecKK
+As my first **Front-End** website project i'll be trying to make a website about Ships called ShipDecKK
 
 ### ShipDecKK
 ShipDecKK is a leading ship dealership, specializing in high-end yachts, cargo ships, and luxury liners. Founded in 2020, the company quickly became known for its unparalleled customer service and top-quality vessels. ShipDecKK offers a wide variety of ships, tailored to meet the diverse needs of its customers, from leisure yachts to commercial shipping solutions. With a commitment to excellence, ShipDecKK uses only the finest materials to build its ships and works closely with expert craftsmen to ensure every vessel meets the highest standards. Their reputation for reliability and customer satisfaction has made them a top choice in the maritime industry.
